@@ -1,0 +1,37 @@
+@api = http://localhost:3000/persons
+
+GET {{api}}
+
+####
+GET {{api}}/987654129
+
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+  "DNI" : 987654129,
+  "NOMBRES" : "Michael",
+  "APELLIDOS" : "Jackson",
+  "FECHANAC" : "02/08/1998",
+  "EDAD" : 25,
+  "CIUDAD" : "lima"
+}
+
+
+###
+DELETE {{api}}/72345678
+
+###
+PUT {{api}}/987654123
+Content-Type: application/json
+
+{
+  "DNI" : 98765410,
+  "NOMBRES" : "ZORAYA",
+  "APELLIDOS" : "Jackson",
+  "FECHANAC" : "02/08/1998",
+  "EDAD" : 25,
+  "CIUDAD" : "lima"
+}
